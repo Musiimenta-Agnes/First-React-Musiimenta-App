@@ -1,32 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 
-function App() {
+
+  function App() {
+  const shoot = function Shot (){
+    alert("Great Shot!")
+  }
+   
   return (
-    <><div>
-      <h1 class="display-1">I love coding with all my heart</h1>
-      <p>My name is Musiimenta Agnes</p>
 
-    </div><div>
-        <ul class="nav nav-bar">
-          <li class="nav-item">
-            <a href='' class="nav-link">About me</a>
-          </li>
-          <li class="nav-item">
-            <a href='' class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href='' class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href='' class="nav-link">Contact me</a>
-          </li>
-        </ul>
-      </div></>
-  )   
+    <div >
+     <p className='display-1' style={{textAlign:'center', color: 'purple'}}>REACT LECTURE JOURNEY </p>
+     <div className='goal-shooting'>
+          <h3>Click the button below to take shoot a goal!</h3>
+          <button className='shot-btn'  onClick={shoot}>Take the shot!</button>
+     </div>
+     
+  
+    </div>
+  ) ;  
 }
+
 
 export default App;
 
