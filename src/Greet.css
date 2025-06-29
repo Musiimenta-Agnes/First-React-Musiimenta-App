@@ -1,0 +1,11 @@
+.greetings-card {
+    border-style: solid 5px;
+    background-color: skyblue;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-image: url(../public/logo192.png);
+}
+
+.name {
+    color: blueviolet;
+}

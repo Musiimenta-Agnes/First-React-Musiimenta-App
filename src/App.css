@@ -15,3 +15,12 @@
   width: 200px;
 
 }
+
+.list {
+  background-color: rgb(184, 230, 214);
+  padding: 6px 6px;
+}
+
+.list-heading {
+  text-decoration: underline;
+}
