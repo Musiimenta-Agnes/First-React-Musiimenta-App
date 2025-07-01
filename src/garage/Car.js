@@ -7,17 +7,20 @@ import './Car.css'
 function Car (props) {
    
     return (
-        <p>I am a car of brand {props.brand.carName} </p>
-        
+        <div>
+        <p>I am a car of brand <span className='text-warning'> {props.brand.carName}</span></p>
+        <p>I am of model <span className='text-info'> {props.brand.model}</span></p>
+        <p>I was made in the year of  <span className='text-warning'> {props.brand.year}</span></p>
+        </div>
     );  
 }
 
 function Garage (){
-    const carInfo = {carName:'Ford', model:'Mustag'};
+    const carInfo = {carName:'Ford', model:'Mustag', year: 2023};
     return (
-        <div className='card' style={{backgroundColor:'green', width:'200px', color:'White', padding: '10px 10px'}}>
+        <div className='card details' style={{backgroundColor: 'green'}}>
         <Car brand = {carInfo} />
-        <p>Who lives in my garage?</p>
+        <p>Who lives in my <span className='text-info'>garage?</span> </p>
        
         </div>
     );
