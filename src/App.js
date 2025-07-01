@@ -20,7 +20,8 @@ import {Garage} from './garage/Car';
    
   return (
 
-    <div >
+    <div className='container' >
+
      <p className='display-1' style={{textAlign:'center', color: 'purple'}}>REACT LECTURE JOURNEY </p>
      <div className='goal-shooting'>
           <h3>Click the button below to take shoot a goal!</h3>
@@ -68,26 +69,30 @@ import {Garage} from './garage/Car';
 
 {/* The login form */}
 
-<div>     
-  <Form>
-    <label>Name:</label>
-    <input type="text" placeholder="Enter Your Name" />
+<div className='row'>
 
-    <label>Email:</label>
-    <input type="email" placeholder="Enter Your Email" />
+      <div className='col'>     
+        <Form>
+          <label>Name:</label>
+          <input type="text" placeholder="Enter Your Name" />
 
-    <label>Password:</label>
-    <input type="password" placeholder="Enter Your Password" />
-  </Form>
-</div>
+          <label>Email:</label>
+          <input type="email" placeholder="Enter Your Email" />
+
+          <label>Password:</label>
+          <input type="password" placeholder="Enter Your Password" />
+        </Form>
+      </div>
 
 
 
-{/* The car garage     */}
-<br/><br/>
-<div>
-   <h1 className='text-primary' style={{fontFamily:'Algerian'}}>My Car App</h1>
-   <Garage/>
+      {/* The car garage     */}
+      <br/><br/>
+      <div className='col'>
+        <h1 className='text-primary' style={{fontFamily:'Algerian'}}>My Car App</h1>
+        <Garage/>
+      </div>
+
 </div>
 
  <br/><br/>
