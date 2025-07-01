@@ -3,7 +3,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Greet from './Greet.js';
+import Greet from './greetings/Greet.js';
+import Form from './form/Form.js'
+import {Garage} from './garage/Car';
 
 
 
@@ -34,9 +36,10 @@ import Greet from './Greet.js';
                   {list.map(myList =>  <li key = {myList} >{myList}</li>)}
               </ul>
         </div>
-
-
 <br/><br/>
+
+
+
 {/* Greetings cards         */}
  <h1 className='text-danger' style={{textAlign:'center'}}>THE GREETINGS CARDS</h1>
 
@@ -61,7 +64,33 @@ import Greet from './Greet.js';
         address="Mbarara, Uganda" 
       />
     </div>
+<br/><br/>
 
+{/* The login form */}
+
+<div>     
+  <Form>
+    <label>Name:</label>
+    <input type="text" placeholder="Enter Your Name" />
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter Your Email" />
+
+    <label>Password:</label>
+    <input type="password" placeholder="Enter Your Password" />
+  </Form>
+</div>
+
+
+
+{/* The car garage     */}
+<br/><br/>
+<div>
+   <h1 className='text-primary' style={{fontFamily:'Algerian'}}>My Car App</h1>
+   <Garage/>
+</div>
+
+ <br/><br/>
 
 
     </div>
