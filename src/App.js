@@ -6,6 +6,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Greet from './greetings/Greet.js';
 import Form from './form/Form.js'
 import {Garage} from './garage/Car';
+import {Greeting} from './person/Person'
 
 
 
@@ -71,29 +72,28 @@ import {Garage} from './garage/Car';
 
 <div className='row'>
 
-      <div className='col'>     
-        <Form>
-          <label>Name:</label>
-          <input type="text" placeholder="Enter Your Name" />
-
-          <label>Email:</label>
-          <input type="email" placeholder="Enter Your Email" />
-
-          <label>Password:</label>
-          <input type="password" placeholder="Enter Your Password" />
-        </Form>
+      <div className='col'>  
+        <h1 className='text-primary' style={{fontFamily:'Algerian'}} >The login Form</h1>   
+        <Form />
       </div>
-
 
 
       {/* The car garage     */}
       <br/><br/>
+
       <div className='col'>
         <h1 className='text-primary' style={{fontFamily:'Algerian'}}>My Car App</h1>
         <Garage/>
       </div>
-
 </div>
+
+<br/><br/>
+ {/* The second greetings card */}
+ <div>
+       <h1 className='text-primary' style={{fontFamily:'Algerian'}}>My Personal App</h1>
+      <Greeting/>
+    </div>
+
 
  <br/><br/>
 

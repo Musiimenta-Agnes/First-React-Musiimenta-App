@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './Car.css'
 
 
-function Car (props) {
+function Cars (props) {
    
     return (
         <div>
@@ -19,10 +19,10 @@ function Garage (){
     const carInfo = {carName:'Ford', model:'Mustag', year: 2023};
     return (
         <div className='card details' style={{backgroundColor: 'green'}}>
-        <Car brand = {carInfo} />
+        <Cars brand = {carInfo} />
         <p>Who lives in my <span className='text-info'>garage?</span> </p>
        
         </div>
     );
 }
-    export {Car, Garage}; 
+    export {Cars, Garage}; 
